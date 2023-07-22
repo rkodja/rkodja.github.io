@@ -516,6 +516,11 @@ input, select, textarea {
 					-ms-transition-delay: 2s;
 					transition-delay: 2s;
 				}
+				
+				#cycleImage {
+					transition: opacity 1s ease; /* Transition property for a 1-second fade effect */
+					opacity: 1; /* Start with full opacity */
+				}
 
 		body.is-preload #main {
 			opacity: 0;

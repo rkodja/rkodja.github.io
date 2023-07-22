@@ -31,14 +31,45 @@
 								</div>
 
 								<article class="item thumb span-2">
+									<h2>reel</h2>
+									<a href="https://vimeo.com/259525803" class="image"><img src="images/thumbs/reel.png" alt="" id="cycleImage"></a>
+								</article>
+								<script>
+									const images = [
+										"images/thumbs/reel.png",
+										"images/thumbs/reel_1.png",
+										"images/thumbs/reel_2.png",
+										"images/thumbs/reel_3.png",
+										"images/thumbs/reel_4.png",
+										"images/thumbs/reel_5.png",
+										"images/thumbs/reel_6.png",
+										
+										// Add more image URLs as needed
+									];
+								
+									let currentIndex = 0;
+									const cycleImage = document.getElementById("cycleImage");
+								
+									function cycleImages() {
+										cycleImage.style.opacity = 0; // Set the opacity to 0 for the fade out effect
+
+										// Wait for the fade out transition to complete before changing the image
+										setTimeout(() => {
+											cycleImage.src = images[currentIndex];
+											cycleImage.style.opacity = 1; // Set the opacity back to 1 for the fade in effect
+											currentIndex = (currentIndex + 1) % images.length;
+										}, 0); // Wait for 1 second for the fade out transition
+										}
+
+										// Call cycleImages function every 3 seconds (3000 milliseconds)
+										setInterval(cycleImages, 1750);
+									</script>
+
+								<article class="item thumb span-2">
 									<h2>cv - resume</h2>
 									<a href="images/fulls/CV_2023.png" class="image"><img src="images/thumbs/typewriter_1.jpg" alt=""></a>
 								</article>
 
-								<article class="item thumb span-2">
-									<h2>reel</h2>
-									<a href="https://vimeo.com/259525803" class="image"><img src="images/thumbs/reel.png" alt=""></a>
-								</article>
 
 								
 							</div>
