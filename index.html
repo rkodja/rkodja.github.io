@@ -65,7 +65,74 @@
 										// Call cycleImages function every 3 seconds (3000 milliseconds)
 										setInterval(cycleImages, 2500);
 									</script>
+
+								<article class="item thumb span-2">
+									<h2>blizzard 2020 : overwatch 2</h2>
+									<a href="https://www.youtube.com/watch?v=K92DBDv84yE&t=692s" class="image"><img src="images/thumbs/Overwatch2Ship.png" alt="" id=""></a>
+								</article>
+								<script>
+									const images = [
+										"images/thumbs/reel_1.jpg",
+										"images/thumbs/reel_2.jpg",
+										"images/thumbs/reel_3.jpg",
+										"images/thumbs/reel_4.jpg",
+										"images/thumbs/reel_5.jpg",
+										"images/thumbs/reel_6.jpg",
+										
+										// Add more image URLs as needed
+									];
 								
+									let currentIndex = 0;
+									const cycleImage = document.getElementById("cycleImage");
+								
+									function cycleImages() {
+										cycleImage.style.opacity = 0; // Set the opacity to 0 for the fade out effect
+
+										// Wait for the fade out transition to complete before changing the image
+										setTimeout(() => {
+											cycleImage.src = images[currentIndex];
+											cycleImage.style.opacity = 1; // Set the opacity back to 1 for the fade in effect
+											currentIndex = (currentIndex + 1) % images.length;
+										}, 0); // Wait for 1 second for the fade out transition
+										}
+
+										// Call cycleImages function every 3 seconds (3000 milliseconds)
+										setInterval(cycleImages, 2500);
+									</script>
+									
+									<article class="item thumb span-2">
+										<h2>blizzard 2020 : shadowlands</h2>
+										<a href="https://www.youtube.com/watch?v=k4BNqACt-BA" class="image"><img src="images/thumbs/shadowlands.png" alt="" id=""></a>
+									</article>
+									<script>
+										const images = [
+											"images/thumbs/reel_1.jpg",
+											"images/thumbs/reel_2.jpg",
+											"images/thumbs/reel_3.jpg",
+											"images/thumbs/reel_4.jpg",
+											"images/thumbs/reel_5.jpg",
+											"images/thumbs/reel_6.jpg",
+											
+											// Add more image URLs as needed
+										];
+									
+										let currentIndex = 0;
+										const cycleImage = document.getElementById("cycleImage");
+									
+										function cycleImages() {
+											cycleImage.style.opacity = 0; // Set the opacity to 0 for the fade out effect
+	
+											// Wait for the fade out transition to complete before changing the image
+											setTimeout(() => {
+												cycleImage.src = images[currentIndex];
+												cycleImage.style.opacity = 1; // Set the opacity back to 1 for the fade in effect
+												currentIndex = (currentIndex + 1) % images.length;
+											}, 0); // Wait for 1 second for the fade out transition
+											}
+	
+											// Call cycleImages function every 3 seconds (3000 milliseconds)
+											setInterval(cycleImages, 2500);
+										</script>
 								<article class="item thumb span-2">
 									<h2>reel 2018</h2>
 									<a href="https://vimeo.com/259525803" class="image"><img src="images/thumbs/reel.jpg" alt="" id="cycleImage"></a>
@@ -140,7 +207,7 @@
 
 								<article class="item thumb span-2">
 									<h2>cv - resume</h2>
-									<a href="images/fulls/resume_aug_2023.png" class="image"><img src="images/thumbs/resumes-desk.jpg" alt=""></a>
+									<a href="images/fulls/rkodja_cv_jan_2024.png" class="image"><img src="images/thumbs/resumes-desk.jpg" alt=""></a>
 								</article>
 
 
