@@ -67,6 +67,40 @@
 									</script>
 
 								<article class="item thumb span-2">
+									<h2>after effects breakdown shot</h2>
+									<a href="https://vimeo.com/941469165?share=copy" class="image"><img src="images/thumbs/thumbnailBreakdown.png" alt="" id=""></a>
+								</article>
+								<script>
+									const images = [
+										"images/thumbs/reel_1.jpg",
+										"images/thumbs/reel_2.jpg",
+										"images/thumbs/reel_3.jpg",
+										"images/thumbs/reel_4.jpg",
+										"images/thumbs/reel_5.jpg",
+										"images/thumbs/reel_6.jpg",
+										
+										// Add more image URLs as needed
+									];
+
+									let currentIndex = 0;
+									const cycleImage = document.getElementById("cycleImage");
+
+									function cycleImages() {
+										cycleImage.style.opacity = 0; // Set the opacity to 0 for the fade out effect
+
+										// Wait for the fade out transition to complete before changing the image
+										setTimeout(() => {
+											cycleImage.src = images[currentIndex];
+											cycleImage.style.opacity = 1; // Set the opacity back to 1 for the fade in effect
+											currentIndex = (currentIndex + 1) % images.length;
+										}, 0); // Wait for 1 second for the fade out transition
+										}
+
+										// Call cycleImages function every 3 seconds (3000 milliseconds)
+										setInterval(cycleImages, 2500);
+									</script>
+
+								<article class="item thumb span-2">
 									<h2>overwatch 2 : engine-map lighting</h2>
 									<a href="https://youtu.be/K92DBDv84yE?si=PA1Y4iNL19ys7RoL" class="image"><img src="images/thumbs/Overwatch2Ship.png" alt="" id=""></a>
 								</article>
@@ -201,10 +235,6 @@
 										setInterval(cycleImages, 2500);
 									</script>
 
-									
-
-									
-
 								<article class="item thumb span-2">
 									<h2>cv - resume</h2>
 									<a href="images/fulls/raji_kodja_cv_jan_2024.png" class="image"><img src="images/thumbs/resumes-desk.jpg" alt=""></a>
@@ -224,7 +254,7 @@
 							<p>
 								sr. compositor | lighter <strong></strong>
 							</p>
-							<p>nuke | maya | unreal | python</p>
+							<p>nuke | after effects | maya | unreal | python</p>
 							
 						</section>
 						<section>
